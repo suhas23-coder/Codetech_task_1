@@ -1,0 +1,52 @@
+# Import necessary libraries
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.datasets import load_iris
+
+# Load the Iris dataset
+iris = load_iris()
+df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
+df['species'] = pd.Categorical.from_codes(iris.target, iris.target_names)
+
+# Display basic information about the dataset
+print("Basic Information:\n")
+print(df.info())
+print("\nFirst five rows of the dataset:\n")
+print(df.head())
+
+# Summary statistics
+print("\nSummary Statistics:\n")
+print(df.describe())
+
+# Check for missing values
+print("\nMissing Values:\n")
+print(df.isnull().sum())
+
+# Univariate Analysis
+# Histograms
+df.hist(figsize=(20, 16), bins=30, edgecolor='black')
+plt.suptitle('Histograms of Iris Dataset Features', fontsize=16)
+plt.show()
+
+# Box plots
+df.plot(kind='box', subplots=True, layout=(2, 2), figsize=(20, 16), sharex=False, sharey=False)
+plt.suptitle('Box Plots of Iris Dataset Features', fontsize=16)
+plt.show()
+
+# Correlation matrix
+correlation_matrix = df.iloc[:, :-1].corr()
+print("\nCorrelation Matrix:\n")
+print(correlation_matrix)
+
+# Heatmap of correlation matrix
+plt.figure(figsize=(20, 16))
+sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', linewidths=0.5)
+plt.title('Heatmap of Iris Dataset Feature Correlations', fontsize=16)
+plt.show()
+
+# Pair plot for detailed scatter plots
+sns.pairplot(df, hue='species', height=2.5)
+plt.suptitle('Pair Plot of Iris Dataset Features', fontsize=16)
+plt.show()
