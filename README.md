@@ -70,9 +70,12 @@ Correlation Heatmap: Visualized relationships between features.
 
 Pair Plot: Explored relationships and clusters among features.
 
-This EDA process ensures that we have a solid understanding of the Iris dataset, enabling us to derive meaningful insights and make informed decisions based on the data.![Figure_4](https://github.com/user-attachments/assets/aadda414-897e-4edf-b0d1-45146dd98761)
-![Figure_3](https://github.com/user-attachments/assets/c4a4f3db-e628-469d-a532-639baab39217)
-![Figure_2](https://github.com/user-attachments/assets/396c136a-5171-48cb-9eb3-1250c73d397c)
-![Figure_1](https://github.com/user-attachments/assets/01f89e3e-3571-4194-8538-7b73b6e25b45)
-![Screenshot 2025-01-10 215509](https://github.com/user-attachments/assets/00299470-b780-4064-86a8-68744e73ee9b)
+This EDA process ensures that we have a solid understanding of the Iris dataset, enabling us to derive meaningful insights and make informed decisions based on the data.!
 ![Screenshot 2025-01-10 215455](https://github.com/user-attachments/assets/9ee8b11c-2763-4ea2-8b45-ac34abac655d)
+![Screenshot 2025-01-10 215509](https://github.com/user-attachments/assets/00299470-b780-4064-86a8-68744e73ee9b)
+![Figure_1](https://github.com/user-attachments/assets/01f89e3e-3571-4194-8538-7b73b6e25b45)
+![Figure_2](https://github.com/user-attachments/assets/396c136a-5171-48cb-9eb3-1250c73d397c)
+![Figure_3](https://github.com/user-attachments/assets/c4a4f3db-e628-469d-a532-639baab39217)
+[Figure_4](https://github.com/user-attachments/assets/aadda414-897e-4edf-b0d1-45146dd98761)
+
+
